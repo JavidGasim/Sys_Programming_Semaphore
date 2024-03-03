@@ -1,0 +1,53 @@
+﻿<Window x:Class="WpfApp9.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp9"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Label Content="PostId" FontSize="20" BorderBrush="Black" BorderThickness="2" Width="70" Height="50" VerticalAlignment="Center" HorizontalAlignment="Left"
+                   VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="25,0,0,0"/>
+            <TextBox Name="postid_txtbox" BorderBrush="Black" BorderThickness="2" Width="600" Height="50" Margin="25,0,0,0"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Label Content="ID" FontSize="20" BorderBrush="Black" BorderThickness="2" Width="70" Height="50" VerticalAlignment="Center" HorizontalAlignment="Left"
+           VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="25,0,0,0"/>
+            <TextBox Name="id_txtbox" BorderBrush="Black" BorderThickness="2" Width="600" Height="50" Margin="25,0,0,0"/>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Label Content="Name" FontSize="20" BorderBrush="Black" BorderThickness="2" Width="70" Height="50" VerticalAlignment="Center" HorizontalAlignment="Left"
+           VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="25,0,0,0"/>
+            <TextBox Name="name_txtbox" BorderBrush="Black" BorderThickness="2" Width="600" Height="50" Margin="25,0,0,0"/>
+        </Grid>
+
+        <Grid Grid.Row="3">
+            <Label Content="Email" FontSize="20" BorderBrush="Black" BorderThickness="2" Width="70" Height="50" VerticalAlignment="Center" HorizontalAlignment="Left"
+           VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="25,0,0,0"/>
+            <TextBox Name="email_txtbox" BorderBrush="Black" BorderThickness="2" Width="600" Height="50" Margin="25,0,0,0"/>
+        </Grid>
+
+        <Grid Grid.Row="4">
+            <Label Content="Body" FontSize="20" BorderBrush="Black" BorderThickness="2" Width="70" Height="50" VerticalAlignment="Center" HorizontalAlignment="Left"
+           VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="25,0,0,0"/>
+            <TextBox Name="body_txtbox" BorderBrush="Black" BorderThickness="2" Width="600" Height="50" Margin="25,0,0,0"/>
+        </Grid>
+
+        <Grid Grid.Row="5">
+            <Button Width="100" Height="50" Content="ADD" Background="Transparent" BorderBrush="Black" BorderThickness="2" FontSize="16" Name="add_click_btn" Click="add_click_btn_Click"/>
+        </Grid>
+    </Grid>
+</Window>
